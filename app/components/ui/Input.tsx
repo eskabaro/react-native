@@ -1,5 +1,5 @@
 import { Dispatch, FC, SetStateAction, useState } from "react"
-import { Button, TextInput, TouchableOpacity, View } from "react-native"
+import { TextInput, TouchableOpacity, View } from "react-native"
 import Icon from 'react-native-vector-icons/Ionicons';
 
 interface IProps {
@@ -8,6 +8,7 @@ interface IProps {
 
 export const Input: FC<IProps> = ({ setSearchValue }) => {
    const [value, setValue] = useState<string>('')
+
    return (
       <View className='bg-light-text rounded-3xl flex flex-row justify-between items-center mt-5 pl-2 pr-2'>
          <TextInput
